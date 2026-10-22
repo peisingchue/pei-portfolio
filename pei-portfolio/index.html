@@ -306,6 +306,14 @@
       letter-spacing: .08em; text-transform: uppercase;
       border: 1px solid var(--border); padding: .2rem .5rem; color: var(--muted);
     }
+    .cert-block { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .cert-block .section-label { margin-bottom: 1rem; }
+    .cert-item { display: block; text-decoration: none; padding: .9rem 0; border-bottom: 1px solid var(--border); }
+    .cert-item:last-child { border-bottom: none; }
+    .cert-name { font-size: .95rem; color: var(--text); font-weight: 500; line-height: 1.4; transition: color .2s; }
+    .cert-item:hover .cert-name { color: var(--accent); }
+    .cert-meta { font-family: 'Space Mono', monospace; font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: .35rem; }
+    .cert-meta .cert-new { color: var(--accent); }
 
     @media(max-width:900px){
       .prod-grid { grid-template-columns: 1fr; }
@@ -1635,6 +1643,14 @@
           <span>UTAR</span>
           <span>Biochemistry</span>
           <span>Analytical Thinking</span>
+        </div>
+
+        <div class="cert-block">
+          <p class="section-label">&#10022; Certifications</p>
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/specialization/ZOWX5Y8D2B4G" target="_blank" rel="noopener">
+            <div class="cert-name">IBM AI Product Manager Professional Certificate &rarr;</div>
+            <div class="cert-meta">IBM &middot; Coursera &nbsp;&middot;&nbsp; Oct 2026 &nbsp;<span class="cert-new">&#10022; New</span></div>
+          </a>
         </div>
       </div>
 

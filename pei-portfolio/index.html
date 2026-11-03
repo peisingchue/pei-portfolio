@@ -1949,55 +1949,55 @@
   <!-- More product work -->
   <div class="notes-block reveal">
     <p class="section-label">&#10022; More Product Work</p>
-    <h3 class="notes-title">Problems I&apos;ve worked through</h3>
+    <h3 class="notes-title">Product calls I&apos;ve made</h3>
     <div class="notes-grid">
       <article class="note-card">
         <p class="note-tag">Platform &middot; Large initiative</p>
         <h4 class="note-name">Rebuilding the core POS without losing a feature</h4>
-        <p class="note-line"><span>Problem</span>The point-of-sale needed a full rebuild, not another patch, and merchants depend on every feature it already has.</p>
-        <p class="note-line"><span>What I did</span>Used everything already shipped as the minimum scope, so nothing merchants rely on gets dropped, then phased the rebuild channel by channel.</p>
+        <p class="note-line"><span>Context</span>The point-of-sale needed a full rebuild, not another patch, and merchants depend on every feature it already has.</p>
+        <p class="note-line"><span>My call</span>Used everything already shipped as the minimum scope, so nothing merchants rely on gets dropped, then phased the rebuild channel by channel.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Loyalty &middot; Lifecycle design</p>
         <h4 class="note-name">Ending a campaign without breaking vouchers</h4>
-        <p class="note-line"><span>Problem</span>Ending a promotion either wiped out vouchers customers had already earned, or left them valid forever.</p>
-        <p class="note-line"><span>What I did</span>Split &ldquo;pause&rdquo; from &ldquo;expire&rdquo;, so ending a campaign asks one clear question: keep or revoke vouchers already issued.</p>
+        <p class="note-line"><span>Context</span>Ending a promotion either wiped out vouchers customers had already earned, or left them valid forever.</p>
+        <p class="note-line"><span>My call</span>Split &ldquo;pause&rdquo; from &ldquo;expire&rdquo;, so ending a campaign asks one clear question: keep or revoke vouchers already issued.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Payments &middot; Cross-system</p>
         <h4 class="note-name">Showing the card fee before customers pay</h4>
-        <p class="note-line"><span>Problem</span>On kiosk and QR, the total on screen was lower than what the terminal charged once a card fee applied.</p>
-        <p class="note-line"><span>What I did</span>Had the ordering screens ask the POS for the fee only after the customer picks card payment, so the total shown is the total charged.</p>
+        <p class="note-line"><span>Context</span>On kiosk and QR, the total on screen was lower than what the terminal charged once a card fee applied.</p>
+        <p class="note-line"><span>My call</span>Had the ordering screens ask the POS for the fee only after the customer picks card payment, so the total shown is the total charged.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Integration &middot; Platform thinking</p>
         <h4 class="note-name">Plugging in a robotic kitchen, reusably</h4>
-        <p class="note-line"><span>Problem</span>A robotic-kitchen partner needed an integration, and a one-off build would only ever serve one partner.</p>
-        <p class="note-line"><span>What I did</span>Ran a gap analysis on their spec and reframed it as reusable building blocks: single-item ordering, self-collect QR and an external fulfilment connector.</p>
+        <p class="note-line"><span>Context</span>A robotic-kitchen partner needed an integration, and a one-off build would only ever serve one partner.</p>
+        <p class="note-line"><span>My call</span>Ran a gap analysis on their spec and reframed it as reusable building blocks: single-item ordering, self-collect QR and an external fulfilment connector.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Loyalty &middot; Cross-channel</p>
         <h4 class="note-name">One stamp-card experience across three channels</h4>
-        <p class="note-line"><span>Problem</span>Customers saw stamp rewards differently in the loyalty app, QR ordering and kiosk.</p>
-        <p class="note-line"><span>What I did</span>Rebuilt the customer-facing stamp UI for all three, while keeping the admin setup unchanged so merchants had nothing new to learn.</p>
+        <p class="note-line"><span>Context</span>Customers saw stamp rewards differently in the loyalty app, QR ordering and kiosk.</p>
+        <p class="note-line"><span>My call</span>Rebuilt the customer-facing stamp UI for all three, while keeping the admin setup unchanged so merchants had nothing new to learn.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Onboarding &middot; UX trade-offs</p>
         <h4 class="note-name">A profile step people can skip, knowingly</h4>
-        <p class="note-line"><span>Problem</span>New members skipped the profile form without realising it unlocked their rewards.</p>
-        <p class="note-line"><span>What I did</span>Kept it skippable but added a short consequence message and a reminder, instead of a hard block that would cost sign-ups.</p>
+        <p class="note-line"><span>Context</span>New members skipped the profile form without realising it unlocked their rewards.</p>
+        <p class="note-line"><span>My call</span>Kept it skippable but added a short consequence message and a reminder, instead of a hard block that would cost sign-ups.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Loyalty &middot; Data integrity</p>
         <h4 class="note-name">Membership expiry without losing history</h4>
-        <p class="note-line"><span>Problem</span>The loyalty platform had no &ldquo;expired&rdquo; state, even though some merchants had expiry rules set.</p>
-        <p class="note-line"><span>What I did</span>Added it by reusing the existing reactivation flow. Records are never deleted, and re-joining starts a fresh membership.</p>
+        <p class="note-line"><span>Context</span>The loyalty platform had no &ldquo;expired&rdquo; state, even though some merchants had expiry rules set.</p>
+        <p class="note-line"><span>My call</span>Added it by reusing the existing reactivation flow. Records are never deleted, and re-joining starts a fresh membership.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Data &middot; Reporting</p>
         <h4 class="note-name">Cleaning up sign-up data across four channels</h4>
-        <p class="note-line"><span>Problem</span>Older customer records didn&apos;t show which channel or outlet they signed up from, so reports were misleading.</p>
-        <p class="note-line"><span>What I did</span>Analysed the export, set a backfill rule for each case, labelled what can&apos;t be recovered as &ldquo;Not captured&rdquo;, and flagged anomalies for the developers.</p>
+        <p class="note-line"><span>Context</span>Older customer records didn&apos;t show which channel or outlet they signed up from, so reports were misleading.</p>
+        <p class="note-line"><span>My call</span>Analysed the export, set a backfill rule for each case, labelled what can&apos;t be recovered as &ldquo;Not captured&rdquo;, and flagged anomalies for the developers.</p>
       </article>
     </div>
   </div>

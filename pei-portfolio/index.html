@@ -1313,6 +1313,16 @@
     .note-line.note-result span { color: var(--accent); }
     .note-line span { display: block; font-size: .78rem; font-weight: 600; color: var(--muted); margin-bottom: .1rem; }
     @media (max-width: 480px) { .notes-grid { grid-template-columns: 1fr; } .notes-block { margin-top: 3.5rem; padding-top: 3rem; } }
+    /* ── COPY V2 ── */
+    .ai-intro { font-size: 1.02rem; color: var(--body); margin-bottom: 1.5rem; max-width: 640px; }
+    .cs-steps { display: grid; gap: .9rem; margin: 0 0 1.6rem; }
+    .cs-steps dt { font-size: .8rem; font-weight: 600; color: var(--accent); margin-bottom: .15rem; }
+    .cs-steps dd { margin: 0; font-size: 1rem; line-height: 1.65; color: var(--body); }
+    .notes-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    @media (max-width: 1100px) { .notes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) { .notes-grid { grid-template-columns: 1fr; } }
+    .svc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; }
+    @media (max-width: 1000px) { .svc-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -1355,7 +1365,7 @@
   <h1 class="hero-name">Pei<br><span class="accent">sing.</span></h1>
   <p class="hero-role">Business needs &nbsp;/&nbsp; Technology &nbsp;/&nbsp; Delivery</p>
   <div class="hero-bottom">
-    <p class="hero-desc">I connect <strong>what the business needs</strong> with <strong>what the team can build.</strong> Four years managing SaaS products &mdash; loyalty, POS, ordering and payments &mdash; from first requirement through testing and launch.</p>
+    <p class="hero-desc">I connect <strong>what the business needs</strong> with <strong>what the team can build.</strong> I&apos;m a hands-on Product Manager, most useful when requirements are unclear and several teams need to land the same thing.</p>
     <div class="hero-cta">
       <a href="#work" class="btn-primary">See My Work &darr;</a>
       <a href="#contact" class="btn-outline">Say Hello</a>
@@ -1395,10 +1405,10 @@
   <div class="about-left reveal">
     <p class="section-label">&#10022; About Me</p>
     <h2 class="section-title" style="margin-bottom:1.8rem;">The Person<br>Behind the Products</h2>
-    <p class="about-text">I&apos;m a <strong>Product Manager based in Singapore</strong>, originally from Penang &mdash; Malaysia&apos;s food paradise (yes, I&apos;m spoilt with good food). I crossed the causeway in 2022 to work in product, and I&apos;ve been building here since.</p>
-    <p class="about-text">Most of my work sits <strong>between the business and the build.</strong> I gather what merchants and stakeholders need, turn it into specs and priorities, and work through it with developers, designers and QA until it&apos;s live &mdash; from client training to app store releases to installs in Singapore, Johor Bahru and Kuala Lumpur. Some products I started from zero; others I picked up halfway and finished.</p>
-    <p class="about-text">I like clear specs, honest updates and fewer surprises. When something isn&apos;t working, I&apos;d rather say so early and fix it together. <strong>Kindness is free</strong>, and it makes hard projects easier.</p>
-    <p class="about-text">Before tech, I spent <strong>5+ years in tourism at Amazing Borneo</strong> in Sabah, where I learned to sell experiences, lead teams and get things done across cultures. I still ask &ldquo;how does this actually work?&rdquo; about almost everything &mdash; that&apos;s what pulled me into product. When I&apos;m not shipping, I&apos;m usually underwater with a camera, hunting down good food somewhere new, or halfway through a crochet project. <strong>Diving is life.</strong></p>
+    <p class="about-text">I grew up in Penang &mdash; Malaysia&apos;s food paradise, so yes, I&apos;m spoilt with good food. My first career was in tourism: more than five years at <strong>Amazing Borneo</strong> in Sabah, moving from sales to marketing to running projects.</p>
+    <p class="about-text">In 2022 I moved into tech and crossed the causeway to Singapore. Product management used the same muscles &mdash; understanding what people need, getting different teams on the same page, and <strong>following through until it works.</strong></p>
+    <p class="about-text">I&apos;m hands-on. I like clear specs, honest updates and fewer surprises, and I&apos;d rather flag a problem early than explain it late. <strong>Kindness is free</strong>, and it makes hard projects easier.</p>
+    <p class="about-text">Outside work I&apos;m usually underwater with a camera, hunting for good food somewhere new, or halfway through a crochet project. <strong>Diving is life.</strong></p>
     <a href="#work" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">See Full Experience &rarr;</a>
   </div>
   <div class="about-right reveal d1">
@@ -1411,7 +1421,7 @@
     </div>
     <div class="stats-grid">
       <div class="stat"><div class="stat-number" id="tenureYears">4</div><div class="stat-label">Years in product</div></div>
-      <div class="stat"><div class="stat-number">6</div><div class="stat-label">Product areas</div></div>
+      <div class="stat"><div class="stat-number">0&rarr;1</div><div class="stat-label">Loyalty platform built</div></div>
       <div class="stat"><div class="stat-number">10</div><div class="stat-label">Years of work, tourism to tech</div></div>
       <div class="stat"><div class="stat-number">&#x1F93F;</div><div class="stat-label">Diver. Always.</div></div>
     </div>
@@ -1425,79 +1435,79 @@
   </div>
   <div class="skills-groups reveal d1">
     <div class="skills-group">
-      <h3 class="skills-group-name">Product management</h3>
+      <h3 class="skills-group-name">Product Management</h3>
       <div class="skills-tags">
-        <span class="skill-tag hot">Product Ownership (A&ndash;Z)</span>
-        <span class="skill-tag hot">0&rarr;1 Product Building</span>
-        <span class="skill-tag hot">Product Roadmap</span>
+        <span class="skill-tag hot">End-to-end Product Ownership</span>
+        <span class="skill-tag hot">0&rarr;1 Product Development</span>
         <span class="skill-tag hot">Requirements &amp; Prioritisation</span>
-        <span class="skill-tag hot">User Acceptance Testing</span>
+        <span class="skill-tag hot">Roadmap Planning</span>
+        <span class="skill-tag hot">UAT &amp; Launch</span>
       </div>
     </div>
     <div class="skills-group">
-      <h3 class="skills-group-name">Platforms and integration</h3>
+      <h3 class="skills-group-name">Platform &amp; Technical Understanding</h3>
       <div class="skills-tags">
-        <span class="skill-tag">API Integration</span>
-        <span class="skill-tag">Third-party Integration</span>
-        <span class="skill-tag">Cross-product Integration</span>
-        <span class="skill-tag">POS Systems</span>
-        <span class="skill-tag">Payment Integration</span>
+        <span class="skill-tag">SaaS Platforms</span>
+        <span class="skill-tag">System &amp; API Integration</span>
+        <span class="skill-tag">POS, Ordering &amp; Payments</span>
+        <span class="skill-tag">Loyalty &amp; CRM</span>
+        <span class="skill-tag">Data Validation</span>
       </div>
     </div>
     <div class="skills-group">
-      <h3 class="skills-group-name">Working with people</h3>
+      <h3 class="skills-group-name">Cross-functional Collaboration</h3>
       <div class="skills-tags">
+        <span class="skill-tag">Engineering, Design &amp; QA</span>
         <span class="skill-tag">Stakeholder Management</span>
-        <span class="skill-tag">Cross-functional Collaboration</span>
-        <span class="skill-tag">Client Training</span>
-        <span class="skill-tag">Remote Team Management</span>
-        <span class="skill-tag">English / Mandarin / Malay</span>
+        <span class="skill-tag">Client Communication &amp; Training</span>
+        <span class="skill-tag">Cross-border Teams</span>
+        <span class="skill-tag">English, Mandarin &amp; Malay</span>
       </div>
     </div>
     <div class="skills-group">
-      <h3 class="skills-group-name">Tools</h3>
+      <h3 class="skills-group-name">Tools &amp; AI-assisted Workflow</h3>
       <div class="skills-tags">
-        <span class="skill-tag">Figma (wireframes &amp; specs)</span>
-        <span class="skill-tag">App Store &amp; Play Store Releases</span>
+        <span class="skill-tag">Claude &amp; ChatGPT</span>
+        <span class="skill-tag">Figma (wireframes)</span>
+        <span class="skill-tag">YouTrack &amp; Trello</span>
         <span class="skill-tag">Google Analytics</span>
-        <span class="skill-tag">YouTrack</span>
-        <span class="skill-tag">Trello</span>
       </div>
     </div>
   </div>
   <!-- AI Tools subsection -->
   <div class="ai-tools-block reveal" style="margin-top:3rem;">
-    <p class="section-label" style="margin-bottom:1.5rem;">&#10022; AI in my workflow</p>
+    <p class="section-label" style="margin-bottom:.6rem;">&#10022; AI in my workflow</p>
+    <p class="ai-intro">I use AI as a working assistant, not a replacement for judgement. I check everything it drafts.</p>
     <div class="ai-tools-grid">
       <div class="ai-tool-card">
         <div class="ai-tool-icon">&#9670;</div>
-        <div class="ai-tool-name">Claude &amp; ChatGPT</div>
-        <div class="ai-tool-desc">First drafts of PRDs, user stories and requirement docs. I start from rough notes and edit from there.</div>
+        <div class="ai-tool-name">Requirements &amp; PRDs</div>
+        <div class="ai-tool-desc">First drafts of PRDs and requirement docs from rough notes, which I then edit.</div>
       </div>
       <div class="ai-tool-card">
         <div class="ai-tool-icon">&#9670;</div>
-        <div class="ai-tool-name">Figma AI</div>
-        <div class="ai-tool-desc">Quick wireframe options, so the team reacts to something concrete early.</div>
+        <div class="ai-tool-name">User stories</div>
+        <div class="ai-tool-desc">Turning agreed scope into user stories and acceptance criteria.</div>
       </div>
       <div class="ai-tool-card">
         <div class="ai-tool-icon">&#9670;</div>
-        <div class="ai-tool-name">AI-assisted Test Cases</div>
-        <div class="ai-tool-desc">Test scenarios generated from specs, then checked by hand. Useful for spotting edge cases before UAT.</div>
+        <div class="ai-tool-name">Workflow exploration</div>
+        <div class="ai-tool-desc">Sketching alternative flows quickly, so the team reacts to something concrete.</div>
       </div>
       <div class="ai-tool-card">
         <div class="ai-tool-icon">&#9670;</div>
-        <div class="ai-tool-name">Feedback Analysis</div>
+        <div class="ai-tool-name">Test cases</div>
+        <div class="ai-tool-desc">Generating test scenarios from specs, then reviewing them by hand before UAT.</div>
+      </div>
+      <div class="ai-tool-card">
+        <div class="ai-tool-icon">&#9670;</div>
+        <div class="ai-tool-name">Feedback analysis</div>
         <div class="ai-tool-desc">Grouping client requests and user feedback into themes I can prioritise.</div>
       </div>
       <div class="ai-tool-card">
         <div class="ai-tool-icon">&#9670;</div>
-        <div class="ai-tool-name">YouTrack &amp; Trello + AI</div>
-        <div class="ai-tool-desc">Backlog clean-up, sprint notes and status summaries.</div>
-      </div>
-      <div class="ai-tool-card ai-tool-card--note">
-        <div class="ai-tool-icon">&#9650;</div>
-        <div class="ai-tool-name">Certified, still learning</div>
-        <div class="ai-tool-desc">IBM AI Product Manager Professional Certificate (Oct 2026). Every sprint still teaches me where AI helps and where it doesn&apos;t.</div>
+        <div class="ai-tool-name">Backlog &amp; status reporting</div>
+        <div class="ai-tool-desc">Tidying backlogs and drafting weekly status summaries.</div>
       </div>
     </div>
   </div>
@@ -1551,7 +1561,7 @@
           <div class="rail-card">
             <span class="rail-year">Sept 2022</span>
             <span class="rail-co">&#x2708; Moved to SG</span>
-            <span class="rail-loc">Product Manager, F&amp;B SaaS</span>
+            <span class="rail-loc">Product Manager, SaaS</span>
           </div>
         </div>
 
@@ -1570,7 +1580,7 @@
           <div class="rail-dot rail-dot--amber"></div>
           <div class="rail-card">
             <span class="rail-year">2024</span>
-            <span class="rail-co">Loyalty CRM &amp; QR Ordering</span>
+            <span class="rail-co">Loyalty &amp; QR Ordering</span>
             <span class="rail-loc">0&rarr;1 products</span>
           </div>
         </div>
@@ -1585,12 +1595,12 @@
           </div>
         </div>
 
-        <!-- 2026 next-gen POS -->
+        <!-- 2026 now -->
         <div class="rail-node" style="left:100%">
           <div class="rail-dot rail-dot--amber rail-dot--lg rail-dot--pulse"></div>
           <div class="rail-card">
             <span class="rail-year">2026</span>
-            <span class="rail-co">Next-generation POS</span>
+            <span class="rail-co">Platform &amp; Payments</span>
             <span class="rail-loc">&#10022; Now</span>
           </div>
         </div>
@@ -1610,160 +1620,113 @@
 
     <div class="svc-grid">
 
-      <!-- ORDERING & FRONT-OF-HOUSE -->
       <div class="svc-card reveal" style="--i:0">
         <div class="svc-card-inner">
           <div class="svc-top">
             <span class="svc-icon">&#9632;</span>
             <span class="prod-expand-hint">+</span>
           </div>
-          <h3 class="svc-name">Ordering &amp;<br>Front-of-House</h3>
-          <p class="svc-line">QR ordering, kiosk, and physical touchpoints that connect diner to kitchen to payment.</p>
+          <h3 class="svc-name">Digital Platforms<br>&amp; Operations</h3>
+          <p class="svc-line">The systems restaurants and retailers run on every day &mdash; at the counter, at the table, at a kiosk and online.</p>
           <div class="svc-products">
+            <span>POS</span>
             <span>QR Ordering</span>
-            <span>Self-order Kiosk</span>
-            <span>Lucky-draw Kiosk</span>
+            <span>Self-service Kiosk</span>
+            <span>E-commerce</span>
+            <span>Operational Tools</span>
           </div>
         </div>
         <div class="svc-detail">
           <div class="svc-detail-inner">
             <div class="svc-product-item">
-              <div class="svc-product-name">QR Ordering <span class="svc-product-badge svc-badge--live">Live since Apr 2024</span></div>
-              <p>Drafted the QR ordering workflow from scratch. Stayed on as the integration lead across ordering, POS, loyalty and payments as it became the platform&apos;s main front-of-house product.</p>
+              <div class="svc-product-name">What I worked on</div>
+              <p>Ordering and checkout that has to behave the same way across every channel, for outlets in more than one country.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">Self-order Kiosk <span class="svc-product-badge svc-badge--live">Live</span></div>
-              <p>Took over a legacy kiosk and refreshed the UI to match the newer product line. Owned the integration requirements between the kiosk, POS and payments &mdash; turning what needed to work across systems into specs the dev team could act on. Handed over once the product was stable and a dedicated PM was in place.</p>
+              <div class="svc-product-name">My role</div>
+              <p>Requirements and specs, working through them with developers and QA, then UAT, rollout and client training.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">Lucky-draw Kiosk <span class="svc-product-badge svc-badge--live">Launched in SG &middot; JB &middot; KL</span></div>
-              <p>Built a digital lucky-draw kiosk for a retail brand from zero &mdash; customer-facing UI, admin dashboard and three local e-wallet and payment integrations. Owned every product decision except pricing.</p>
+              <div class="svc-product-name">My contribution</div>
+              <p>Took over several products mid-build &mdash; some with no documentation &mdash; and saw them through to launch, including a self-service kiosk rolled out in Singapore and Malaysia.</p>
+            </div>
+            <div class="svc-product-item">
+              <div class="svc-product-name">What I learned</div>
+              <p>The hardest part is rarely the feature. It&apos;s getting every channel to agree on the same rules.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- LOYALTY & CRM -->
       <div class="svc-card reveal" style="--i:1">
         <div class="svc-card-inner">
           <div class="svc-top">
             <span class="svc-icon">&#9632;</span>
             <span class="prod-expand-hint">+</span>
           </div>
-          <h3 class="svc-name">Loyalty<br>&amp; CRM</h3>
-          <p class="svc-line">Merchant-owned customer data, member perks, and email engagement &mdash; built in-house and integrated into client websites.</p>
+          <h3 class="svc-name">Customer Experience<br>&amp; Engagement</h3>
+          <p class="svc-line">Helping merchants own their customer relationships &mdash; memberships, rewards and the apps customers use every day.</p>
           <div class="svc-products">
-            <span>Loyalty CRM</span>
-            <span>Website Integration</span>
+            <span>Loyalty</span>
+            <span>CRM</span>
+            <span>Membership</span>
+            <span>Customer-facing Apps</span>
           </div>
         </div>
         <div class="svc-detail">
           <div class="svc-detail-inner">
             <div class="svc-product-item">
-              <div class="svc-product-name">Loyalty CRM <span class="svc-product-badge svc-badge--live">Live since Apr 2024</span></div>
-              <p>Built a loyalty and CRM platform integrated closely with the POS. Started as the only PM with no playbook, working through internal blockers and complex API dependencies. Launched the first version in April 2024 and kept improving it through December 2025 based on live merchant feedback.</p>
-              <div class="challenge-block">
-                <span class="challenge-label">&#9650; Real challenge</span>
-                <p>Migrated 20,000 customer records &mdash; points, vouchers, history &mdash; from a client&apos;s previous platform into the new CRM. The migration landed in October with a wave of ad-hoc requests that pushed the scope well beyond the original brief. Not everything was perfect on day one. I stayed on it &mdash; adjusting data, communicating gaps honestly with the client, and working through every issue methodically. By January we were revisiting edge cases. By March it was closed. What I learned: a migration is never just data. It&apos;s trust, and you earn it back through consistency, not perfection.</p>
-              </div>
+              <div class="svc-product-name">What I worked on</div>
+              <p>Loyalty, memberships and promotions, and the customer-facing apps where people actually use them.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">Website Integration <span class="svc-product-badge svc-badge--live">Ongoing</span></div>
-              <p>Leading the integration of the loyalty platform into clients&apos; own websites &mdash; not coding, but owning the requirements between what clients want and what our developers build. I turn the loyalty experience clients describe into API specs, user flows and acceptance criteria developers can work from without back-and-forth.</p>
+              <div class="svc-product-name">My role</div>
+              <p>Sole PM on a loyalty platform from first spec to launch; product owner for a client&apos;s consumer app.</p>
+            </div>
+            <div class="svc-product-item">
+              <div class="svc-product-name">My contribution</div>
+              <p>Built the loyalty platform from zero and kept improving it with live merchant feedback. Also saw a large client data migration through, from first import to final edge case.</p>
+            </div>
+            <div class="svc-product-item">
+              <div class="svc-product-name">What I learned</div>
+              <p>A migration is never just data. It&apos;s trust, and you earn it back through consistency, not perfection.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- PAYMENTS -->
       <div class="svc-card reveal" style="--i:2">
         <div class="svc-card-inner">
           <div class="svc-top">
             <span class="svc-icon">&#9632;</span>
             <span class="prod-expand-hint">+</span>
           </div>
-          <h3 class="svc-name">Payments</h3>
-          <p class="svc-line">In-house payment infrastructure behind every ordering and checkout touchpoint.</p>
+          <h3 class="svc-name">Payments<br>&amp; Integrations</h3>
+          <p class="svc-line">Keeping payments predictable across channels, and connecting third-party services without one-off builds.</p>
           <div class="svc-products">
-            <span>Payments Platform</span>
-            <span>Mini POS</span>
+            <span>Payment Platforms</span>
+            <span>Third-party Integrations</span>
+            <span>Cross-platform Coordination</span>
+            <span>Payment Workflows</span>
           </div>
         </div>
         <div class="svc-detail">
           <div class="svc-detail-inner">
             <div class="svc-product-item">
-              <div class="svc-product-name">Payments Platform <span class="svc-product-badge svc-badge--live">Core product</span></div>
-              <p>The most business-critical product in the stack. My role grew over time &mdash; from consolidating issues and supporting developers, to building enough domain knowledge to be useful, to requirements analysis and prioritisation for new features from 2025. Not the main owner, but a contributor who understands how payment logic connects to every other product.</p>
+              <div class="svc-product-name">What I worked on</div>
+              <p>Payment experiences across ordering channels, e-wallet and payment-provider integrations, and partner integrations.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">Mini POS <span class="svc-product-badge">Testing &amp; Integration</span></div>
-              <p>A lightweight POS used by many merchants. I handled product testing, especially integration points with the loyalty platform and the main POS, working closely with the payments PM.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- POS & PLATFORM -->
-      <div class="svc-card reveal" style="--i:3">
-        <div class="svc-card-inner">
-          <div class="svc-top">
-            <span class="svc-icon">&#9632;</span>
-            <span class="prod-expand-hint">+</span>
-          </div>
-          <h3 class="svc-name">POS &amp;<br>Platform</h3>
-          <p class="svc-line">The next generation of the core platform &mdash; POS, e-commerce and cloud infrastructure.</p>
-          <div class="svc-products">
-            <span>Next-gen POS</span>
-            <span>E-commerce Platform</span>
-            <span>Consumer Mobile App</span>
-          </div>
-        </div>
-        <div class="svc-detail">
-          <div class="svc-detail-inner">
-            <div class="svc-product-item">
-              <div class="svc-product-name">Next-gen POS <span class="svc-product-badge svc-badge--now">Now</span></div>
-              <p>Next-generation POS built on the company&apos;s cloud platform. Translating leadership requirements into dev-ready specs, with ownership across UI, development, testing and delivery.</p>
+              <div class="svc-product-name">My role</div>
+              <p>Contributor rather than owner on the core payments product: requirements, prioritisation of new features, and integration testing.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">E-commerce Platform <span class="svc-product-badge svc-badge--live">Live</span></div>
-              <p>Took over in March 2025. Refined the core modules &mdash; products, sales orders and checkout &mdash; and migrated the first client off a legacy platform. It handles real transactions today; the remaining work is onboarding, edge cases and scale.</p>
+              <div class="svc-product-name">My contribution</div>
+              <p>Built enough payments knowledge to prioritise features and test how payments connect to everything else.</p>
             </div>
             <div class="svc-product-item">
-              <div class="svc-product-name">Consumer Mobile App <span class="svc-product-badge svc-badge--live">Apr&ndash;Sep 2025</span></div>
-              <p>The first mobile app I owned end to end, for a restaurant group. With no product owner on the client side, I managed several layers of stakeholders through structured docs and presentations. I mapped the full flow in Figma to prototype level, and the developer had almost no questions during the build. I also set up the App Store and Play Store releases myself.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- EARLY & INTERNAL -->
-      <div class="svc-card reveal" style="--i:4">
-        <div class="svc-card-inner">
-          <div class="svc-top">
-            <span class="svc-icon">&#9632;</span>
-            <span class="prod-expand-hint">+</span>
-          </div>
-          <h3 class="svc-name">Early &amp;<br>Internal Tools</h3>
-          <p class="svc-line">The products nobody documented. All takeovers. All shipped.</p>
-          <div class="svc-products">
-            <span>B2B E-commerce</span>
-            <span>Recruitment Platform</span>
-            <span>Procurement Tool</span>
-          </div>
-        </div>
-        <div class="svc-detail">
-          <div class="svc-detail-inner">
-            <div class="svc-product-item">
-              <div class="svc-product-name">B2B E-commerce <span class="svc-product-badge">2022</span></div>
-              <p>My first product in Singapore. Took over an unfinished B2B e-commerce platform, reworked the flows and shipped something the sales team actively sold.</p>
-            </div>
-            <div class="svc-product-item">
-              <div class="svc-product-name">Recruitment Platform <span class="svc-product-badge">2022&ndash;2024</span></div>
-              <p>Took over at about 30% complete with no documentation. Owned UI, system requirements, dev coordination, QA, delivery and live client training.</p>
-            </div>
-            <div class="svc-product-item">
-              <div class="svc-product-name">Procurement Tool <span class="svc-product-badge">Internal Tool</span></div>
-              <p>A procurement backend for a client&apos;s supply chain. Bridged a Chinese-speaking client and a Vietnamese dev team to deliver a working tool on time.</p>
+              <div class="svc-product-name">What I learned</div>
+              <p>Payments touch every product, so a small change needs wide testing.</p>
             </div>
           </div>
         </div>
@@ -1780,14 +1743,13 @@
         <p class="section-label">&#10022; Before Tech</p>
         <h3 class="prev-title">Amazing Borneo</h3>
         <p class="prev-period">Sabah, Malaysia &nbsp;&middot;&nbsp; 2016&ndash;2022</p>
-        <p class="prev-desc">5+ years in one company, six role changes &mdash; not because of reshuffles, but because I kept taking on more than I was asked to. Went from handling sales enquiries to running marketing for a multi-market tourism brand to managing projects end-to-end. Worked with guides, clients, corporate accounts, and C-suite &mdash; often in the same week. The ability to shift register, earn trust quickly, and keep things moving without a clear playbook &mdash; that started here.</p>
+        <p class="prev-desc">More than five years at one company, with more responsibility each time &mdash; from sales to marketing to managing projects end to end. I worked with guides, clients, corporate partners and senior management, often across cultures and rarely with a playbook. Understanding customers, communicating with stakeholders and keeping things moving: that started here.</p>
         <div class="prev-roles">
-          <span>Sales Coordinator</span>
-          <span>Marketing Strategist</span>
-          <span>Sr. Marketing Strategist</span>
-          <span>Asst. Marketing Manager</span>
-          <span>Marketing Manager</span>
-          <span>Project Manager</span>
+          <span>Sales</span>
+          <span>&rarr;</span>
+          <span>Marketing</span>
+          <span>&rarr;</span>
+          <span>Project Management</span>
         </div>
       </div>
 
@@ -1795,7 +1757,7 @@
         <p class="section-label">&#10022; Education</p>
         <h3 class="prev-title">BSc (Hons.) Biochemistry</h3>
         <p class="prev-period">Universiti Tunku Abdul Rahman (UTAR) &nbsp;&middot;&nbsp; 2009&ndash;2013</p>
-        <p class="prev-desc">Biochemistry at UTAR taught me to break a complex system into testable parts and work methodically when the answer isn&apos;t obvious. That&apos;s closer to writing product requirements than most people expect. The move into tech wasn&apos;t a plan &mdash; but the instinct to ask &ldquo;how does this actually work?&rdquo; followed me into every product I&apos;ve built.</p>
+        <p class="prev-desc">Biochemistry taught me to break a complex system into parts and test them one at a time. I still ask &ldquo;how does this actually work?&rdquo; about most things.</p>
         <div class="prev-roles">
           <span>UTAR</span>
           <span>Biochemistry</span>
@@ -1806,11 +1768,11 @@
           <p class="section-label">&#10022; Certifications</p>
           <a class="cert-item" href="https://www.coursera.org/account/accomplishments/specialization/ZOWX5Y8D2B4G" target="_blank" rel="noopener">
             <div class="cert-name">IBM AI Product Manager Professional Certificate &rarr;</div>
-            <div class="cert-meta">IBM &middot; Coursera &nbsp;&middot;&nbsp; Oct 2026 &nbsp;<span class="cert-new">&#10022; New</span></div>
+            <div class="cert-meta">IBM &nbsp;&middot;&nbsp; Oct 2026 &nbsp;<span class="cert-new">&#10022; New</span></div>
           </a>
           <a class="cert-item" href="https://www.coursera.org/account/accomplishments/records/EO1VAOSTDYD7" target="_blank" rel="noopener">
             <div class="cert-name">Product Management: An Introduction &rarr;</div>
-            <div class="cert-meta">IBM &middot; Coursera &nbsp;&middot;&nbsp; Jun 2026</div>
+            <div class="cert-meta">IBM &nbsp;&middot;&nbsp; Jun 2026</div>
           </a>
         </div>
       </div>
@@ -1828,97 +1790,11 @@
     </div>
   </div>
 
-  <!-- ── FEATURED VIDEO CASE STUDY ── -->
+  <!-- ── CASE STUDY 1: 0→1 loyalty platform ── -->
   <div class="case-study reveal">
     <div class="case-study-video">
       <div class="video-wrapper" id="videoWrapper">
         <svg class="illus-art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-          <rect width="640" height="360" fill="#1a1612"/>
-          <circle cx="470" cy="120" r="150" fill="#f5a623" opacity=".06"/>
-          <path d="M120 300 C 220 300, 230 120, 330 120 S 470 250, 560 90" fill="none" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 8" opacity=".55"/>
-          <g transform="translate(190 52) rotate(-6)">
-            <rect width="132" height="256" rx="20" fill="#0f0d0a" stroke="#3a3328" stroke-width="2"/>
-            <rect x="14" y="22" width="104" height="58" rx="8" fill="#f5a623" opacity=".85"/>
-            <rect x="14" y="92" width="72" height="8" rx="4" fill="#3a3328"/>
-            <rect x="14" y="108" width="96" height="8" rx="4" fill="#3a3328"/>
-            <rect x="14" y="132" width="48" height="44" rx="8" fill="#3a3328"/>
-            <rect x="70" y="132" width="48" height="44" rx="8" fill="#3a3328"/>
-            <rect x="14" y="184" width="48" height="44" rx="8" fill="#3a3328"/>
-            <rect x="70" y="184" width="48" height="44" rx="8" fill="#f5a623" opacity=".35"/>
-          </g>
-          <g transform="translate(330 76) rotate(5)">
-            <rect width="132" height="256" rx="20" fill="#0f0d0a" stroke="#3a3328" stroke-width="2"/>
-            <circle cx="66" cy="70" r="30" fill="none" stroke="#f5a623" stroke-width="3"/>
-            <path d="M52 70 l10 10 l20 -22" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="24" y="124" width="84" height="8" rx="4" fill="#3a3328"/>
-            <rect x="36" y="140" width="60" height="8" rx="4" fill="#3a3328"/>
-            <rect x="18" y="196" width="96" height="34" rx="17" fill="#f5a623"/>
-          </g>
-          <circle cx="120" cy="300" r="6" fill="#f5a623"/><circle cx="560" cy="90" r="6" fill="#f5a623"/>
-        </svg>
-      </div>
-    </div>
-    <div class="case-study-info">
-      <span class="case-study-label">&#10022; Case Study &nbsp;&middot;&nbsp; Mobile App</span>
-      <h3 class="case-study-title">Consumer App for a Restaurant Group</h3>
-      <p class="case-study-sub">Consumer mobile app &nbsp;&middot;&nbsp; Apr &ndash; Sep 2025</p>
-      <p class="case-study-desc">A restaurant group needed its own app but had no product owner on its side, so I owned the product decisions and kept their stakeholders aligned. The developer had almost no questions during the build.</p>
-      <div class="case-study-highlights">
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>End-to-end product ownership</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>Multi-stakeholder management</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>App Store &amp; Play Store deployment</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>Platform integration</span>
-        </div>
-      </div>
-      <div class="case-study-tags">
-        <span>Mobile App</span><span>iOS</span><span>Android</span><span>Stakeholder Management</span><span>Figma</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── SECOND CASE STUDY: loyalty platform ── -->
-  <div class="case-study case-study--reverse reveal" style="margin-top:4rem;padding-top:4rem;border-top:1px solid var(--border);">
-    <div class="case-study-info">
-      <span class="case-study-label">&#10022; Case Study &nbsp;&middot;&nbsp; Loyalty Platform</span>
-      <h3 class="case-study-title">Loyalty CRM, Built From Zero</h3>
-      <p class="case-study-sub">Loyalty &amp; membership platform &nbsp;&middot;&nbsp; Live since Apr 2024</p>
-      <p class="case-study-desc">An in-house loyalty platform, so merchants own their customer data. I was the only PM from first spec to launch in April 2024, then kept improving it on live merchant feedback.</p>
-      <div class="case-study-highlights">
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>Built 0&rarr;1 as the only PM</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>Deep POS API integration</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>20,000 customer records migrated</span>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-icon">&#9670;</span>
-          <span>Merchant-owned data, no third-party</span>
-        </div>
-      </div>
-      <div class="case-study-tags">
-        <span>CRM</span><span>Loyalty</span><span>Member Portal</span><span>API Integration</span>
-      </div>
-    </div>
-    <div class="case-study-video">
-      <div class="video-wrapper" id="videoWrapper2">
-<svg class="illus-art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
           <rect width="640" height="360" fill="#1a1612"/>
           <g transform="translate(320 180)">
             <circle r="150" fill="none" stroke="#3a3328" stroke-width="1.5"/>
@@ -1946,68 +1822,122 @@
         </svg>
       </div>
     </div>
+    <div class="case-study-info">
+      <span class="case-study-label">&#10022; Case Study &nbsp;&middot;&nbsp; 0&rarr;1 Product</span>
+      <h3 class="case-study-title">Loyalty Platform, Built From Zero</h3>
+      <p class="case-study-sub">Loyalty &amp; membership &nbsp;&middot;&nbsp; Live since Apr 2024</p>
+      <dl class="cs-steps">
+        <div><dt>Context</dt><dd>Merchants wanted to own their customer relationships instead of renting them through third-party loyalty tools.</dd></div>
+        <div><dt>Challenge</dt><dd>Build a loyalty product from nothing, tightly connected to the point-of-sale, with no product playbook to follow.</dd></div>
+        <div><dt>My role</dt><dd>Sole PM, from first spec through launch and beyond.</dd></div>
+        <div><dt>My approach</dt><dd>Started from what merchants and outlet staff need day to day, defined a first version that could launch, then improved it in small steps on live merchant feedback.</dd></div>
+        <div><dt>Outcome</dt><dd>Launched in April 2024 and kept improving through 2025. The biggest lesson came after launch: support, migrations and edge cases are where trust is built.</dd></div>
+      </dl>
+      <div class="case-study-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>Built 0&rarr;1 as the only PM</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>Integrated with point-of-sale</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>Merchant-owned customer data</span>
+        </div>
+      </div>
+      <div class="case-study-tags">
+        <span>CRM</span><span>Loyalty</span><span>Member Portal</span><span>Integration</span>
+      </div>
+    </div>
   </div>
 
-  <!-- More product work -->
+  <!-- ── CASE STUDY 2: cross-functional consumer app ── -->
+  <div class="case-study case-study--reverse reveal" style="margin-top:4rem;padding-top:4rem;border-top:1px solid var(--border);">
+    <div class="case-study-info">
+      <span class="case-study-label">&#10022; Case Study &nbsp;&middot;&nbsp; Cross-functional</span>
+      <h3 class="case-study-title">Consumer App for a Restaurant Group</h3>
+      <p class="case-study-sub">Mobile app &nbsp;&middot;&nbsp; Apr &ndash; Sep 2025</p>
+      <dl class="cs-steps">
+        <div><dt>Context</dt><dd>A restaurant group wanted its own consumer app, built on our platform.</dd></div>
+        <div><dt>Challenge</dt><dd>No product owner on the client side, several layers of stakeholders, and a developer who needed clear answers to keep moving.</dd></div>
+        <div><dt>My role</dt><dd>Owned the product decisions end to end, through to the App Store and Play Store release.</dd></div>
+        <div><dt>My approach</dt><dd>Turned scattered requests into structured documents and short presentations, so decisions actually got made. Mapped every flow to prototype detail before development, so most questions were answered up front.</dd></div>
+        <div><dt>Outcome</dt><dd>The developer had almost no questions during the build, and the app shipped on both stores. Lesson: when nobody owns the decisions, writing them down is how you own them.</dd></div>
+      </dl>
+      <div class="case-study-highlights">
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>End-to-end product ownership</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>Multi-stakeholder management</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">&#9670;</span>
+          <span>App Store &amp; Play Store release</span>
+        </div>
+      </div>
+      <div class="case-study-tags">
+        <span>Mobile App</span><span>iOS</span><span>Android</span><span>Stakeholder Management</span>
+      </div>
+    </div>
+    <div class="case-study-video">
+      <div class="video-wrapper" id="videoWrapper2">
+        <svg class="illus-art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <rect width="640" height="360" fill="#1a1612"/>
+          <circle cx="470" cy="120" r="150" fill="#f5a623" opacity=".06"/>
+          <path d="M120 300 C 220 300, 230 120, 330 120 S 470 250, 560 90" fill="none" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="4 8" opacity=".55"/>
+          <g transform="translate(190 52) rotate(-6)">
+            <rect width="132" height="256" rx="20" fill="#0f0d0a" stroke="#3a3328" stroke-width="2"/>
+            <rect x="14" y="22" width="104" height="58" rx="8" fill="#f5a623" opacity=".85"/>
+            <rect x="14" y="92" width="72" height="8" rx="4" fill="#3a3328"/>
+            <rect x="14" y="108" width="96" height="8" rx="4" fill="#3a3328"/>
+            <rect x="14" y="132" width="48" height="44" rx="8" fill="#3a3328"/>
+            <rect x="70" y="132" width="48" height="44" rx="8" fill="#3a3328"/>
+            <rect x="14" y="184" width="48" height="44" rx="8" fill="#3a3328"/>
+            <rect x="70" y="184" width="48" height="44" rx="8" fill="#f5a623" opacity=".35"/>
+          </g>
+          <g transform="translate(330 76) rotate(5)">
+            <rect width="132" height="256" rx="20" fill="#0f0d0a" stroke="#3a3328" stroke-width="2"/>
+            <circle cx="66" cy="70" r="30" fill="none" stroke="#f5a623" stroke-width="3"/>
+            <path d="M52 70 l10 10 l20 -22" fill="none" stroke="#f5a623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="24" y="124" width="84" height="8" rx="4" fill="#3a3328"/>
+            <rect x="36" y="140" width="60" height="8" rx="4" fill="#3a3328"/>
+            <rect x="18" y="196" width="96" height="34" rx="17" fill="#f5a623"/>
+          </g>
+          <circle cx="120" cy="300" r="6" fill="#f5a623"/><circle cx="560" cy="90" r="6" fill="#f5a623"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product thinking in practice -->
   <div class="notes-block reveal">
-    <p class="section-label">&#10022; More Product Work</p>
-    <h3 class="notes-title">Goals I&apos;ve owned</h3>
+    <p class="section-label">&#10022; Product Thinking in Practice</p>
+    <h3 class="notes-title">Small calls that mattered</h3>
     <div class="notes-grid">
       <article class="note-card">
-        <p class="note-tag">Platform &middot; Large initiative</p>
-        <h4 class="note-name">Move merchants to a rebuilt POS with nothing left behind</h4>
-        <p class="note-line"><span>Goal</span>Replace the core point-of-sale with a rebuilt one, without dropping anything merchants rely on today.</p>
-        <p class="note-line"><span>Approach</span>Set everything already shipped as the minimum scope, then phased the rebuild channel by channel.</p>
-        <p class="note-line note-result"><span>Result</span>In progress. The team and merchants work from one shared definition of &ldquo;done&rdquo;.</p>
+        <p class="note-tag">Matching system behaviour to how users think</p>
+        <h4 class="note-name">Promotions that end the way merchants expect</h4>
+        <p class="note-line">The system and merchants had different ideas of what &ldquo;ending&rdquo; a campaign meant, so I made the choice explicit instead of assuming.</p>
       </article>
       <article class="note-card">
-        <p class="note-tag">Loyalty &middot; Lifecycle design</p>
-        <h4 class="note-name">Give merchants control over how campaigns end</h4>
-        <p class="note-line"><span>Goal</span>Let merchants end a promotion without hurting customers who have already earned rewards.</p>
-        <p class="note-line"><span>Approach</span>Separated pausing a campaign from expiring it. Ending one asks a single question: keep or revoke the vouchers already issued.</p>
-        <p class="note-line note-result"><span>Result</span>Merchants decide what happens to existing vouchers, instead of the system deciding for them.</p>
+        <p class="note-tag">Cross-channel consistency</p>
+        <h4 class="note-name">The same price, whichever way you order</h4>
+        <p class="note-line">Kept payment behaviour consistent across self-service channels by deciding which system owns each rule.</p>
       </article>
       <article class="note-card">
-        <p class="note-tag">Payments &middot; Cross-system</p>
-        <h4 class="note-name">Make the price customers see the price they pay</h4>
-        <p class="note-line"><span>Goal</span>Show the full amount, card fee included, before customers pay on kiosk or QR.</p>
-        <p class="note-line"><span>Approach</span>The ordering screens ask the POS for the fee only once card payment is chosen, so fee rules live in one place.</p>
-        <p class="note-line note-result"><span>Result</span>The on-screen total matches the terminal, and fees are managed in a single system.</p>
+        <p class="note-tag">Balancing business goals with user friction</p>
+        <h4 class="note-name">Helpful nudges over hard blocks</h4>
+        <p class="note-line">Let new members skip a sign-up step and told them what they&apos;d miss, rather than forcing it and losing sign-ups.</p>
       </article>
       <article class="note-card">
-        <p class="note-tag">Integration &middot; Platform thinking</p>
-        <h4 class="note-name">Turn one partner integration into reusable building blocks</h4>
-        <p class="note-line"><span>Goal</span>Support a robotic-kitchen partner without building something only one partner could ever use.</p>
-        <p class="note-line"><span>Approach</span>Ran a gap analysis on the partner&apos;s spec and reframed it into single-item ordering, self-collect QR and an external fulfilment connector.</p>
-        <p class="note-line note-result"><span>Result</span>Three components future partners can reuse, instead of a one-off build.</p>
-      </article>
-      <article class="note-card">
-        <p class="note-tag">Loyalty &middot; Cross-channel</p>
-        <h4 class="note-name">One rewards experience across every channel</h4>
-        <p class="note-line"><span>Goal</span>Customers should see stamp rewards the same way in the loyalty app, QR ordering and kiosk.</p>
-        <p class="note-line"><span>Approach</span>Rebuilt the customer-facing stamp UI for all three channels and kept the admin setup unchanged.</p>
-        <p class="note-line note-result"><span>Result</span>A consistent experience for customers, with nothing new for merchants to learn.</p>
-      </article>
-      <article class="note-card">
-        <p class="note-tag">Onboarding &middot; UX trade-offs</p>
-        <h4 class="note-name">More complete member profiles, without losing sign-ups</h4>
-        <p class="note-line"><span>Goal</span>Get more members to complete their profile without making sign-up harder.</p>
-        <p class="note-line"><span>Approach</span>Kept the step skippable, and added a short message on what skipping costs plus a gentle reminder.</p>
-        <p class="note-line note-result"><span>Result</span>Members understand the trade-off, and sign-up stays quick.</p>
-      </article>
-      <article class="note-card">
-        <p class="note-tag">Loyalty &middot; Data integrity</p>
-        <h4 class="note-name">Support membership expiry without losing history</h4>
-        <p class="note-line"><span>Goal</span>Let merchants enforce the expiry rules they had already set up.</p>
-        <p class="note-line"><span>Approach</span>Added an &ldquo;expired&rdquo; state by reusing the existing reactivation flow, and never delete member records.</p>
-        <p class="note-line note-result"><span>Result</span>Expiry works without new reactivation logic, and every member&apos;s history stays intact.</p>
-      </article>
-      <article class="note-card">
-        <p class="note-tag">Data &middot; Reporting</p>
-        <h4 class="note-name">Make sign-up reports trustworthy</h4>
-        <p class="note-line"><span>Goal</span>Reports should show reliably where customers signed up, across four channels.</p>
-        <p class="note-line"><span>Approach</span>Analysed the data, set a backfill rule for each case, labelled what can&apos;t be recovered as &ldquo;Not captured&rdquo; and flagged anomalies for developers.</p>
-        <p class="note-line note-result"><span>Result</span>Reports that are clear about what is known and what isn&apos;t.</p>
+        <p class="note-tag">Data judgement</p>
+        <h4 class="note-name">Reports that are honest about gaps</h4>
+        <p class="note-line">Where old data couldn&apos;t be recovered, I labelled it clearly instead of filling the gaps with guesses.</p>
       </article>
     </div>
   </div>
@@ -2023,7 +1953,7 @@
   <div class="reveal">
     <p class="section-label">&#10022; Let&apos;s Connect</p>
     <h2 class="contact-big">Let&apos;s<em>Talk.</em></h2>
-    <p class="contact-sub">Happy to talk about product roles, SaaS platforms, or a problem you&apos;re working through. I&apos;m open to Product Manager and Technical Product Manager conversations in Singapore, across industries. Email is the quickest way to reach me.</p>
+    <p class="contact-sub">Always happy to talk about product management, SaaS platforms, or a tricky problem you&apos;re working through. Email is the quickest way to reach me.</p>
   </div>
   <div class="contact-list reveal d1">
     <a href="mailto:peisingc@gmail.com" class="contact-row">Email<span>peisingc@gmail.com &rarr;</span></a>

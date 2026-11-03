@@ -1300,8 +1300,8 @@
     /* ── MORE PRODUCT WORK ── */
     .notes-block { margin-top: 5rem; padding-top: 4rem; border-top: 1px solid var(--border); }
     .notes-title { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1; letter-spacing: .02em; margin-bottom: 2rem; }
-    .notes-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-    @media (max-width: 1100px) { .notes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .notes-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+    @media (max-width: 1280px) { .notes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 700px) { .notes-grid { grid-template-columns: 1fr; } }
     .note-card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.6rem 1.6rem 1.4rem; transition: border-color .2s, transform .2s; }
     .note-card:hover { border-color: rgba(245,166,35,.35); transform: translateY(-2px); }
@@ -1952,6 +1952,12 @@
     <h3 class="notes-title">Problems I&apos;ve worked through</h3>
     <div class="notes-grid">
       <article class="note-card">
+        <p class="note-tag">Platform &middot; Large initiative</p>
+        <h4 class="note-name">Rebuilding the core POS without losing a feature</h4>
+        <p class="note-line"><span>Problem</span>The point-of-sale needed a full rebuild, not another patch, and merchants depend on every feature it already has.</p>
+        <p class="note-line"><span>What I did</span>Used everything already shipped as the minimum scope, so nothing merchants rely on gets dropped, then phased the rebuild channel by channel.</p>
+      </article>
+      <article class="note-card">
         <p class="note-tag">Loyalty &middot; Lifecycle design</p>
         <h4 class="note-name">Ending a campaign without breaking vouchers</h4>
         <p class="note-line"><span>Problem</span>Ending a promotion either wiped out vouchers customers had already earned, or left them valid forever.</p>
@@ -1962,6 +1968,18 @@
         <h4 class="note-name">Showing the card fee before customers pay</h4>
         <p class="note-line"><span>Problem</span>On kiosk and QR, the total on screen was lower than what the terminal charged once a card fee applied.</p>
         <p class="note-line"><span>What I did</span>Had the ordering screens ask the POS for the fee only after the customer picks card payment, so the total shown is the total charged.</p>
+      </article>
+      <article class="note-card">
+        <p class="note-tag">Integration &middot; Platform thinking</p>
+        <h4 class="note-name">Plugging in a robotic kitchen, reusably</h4>
+        <p class="note-line"><span>Problem</span>A robotic-kitchen partner needed an integration, and a one-off build would only ever serve one partner.</p>
+        <p class="note-line"><span>What I did</span>Ran a gap analysis on their spec and reframed it as reusable building blocks: single-item ordering, self-collect QR and an external fulfilment connector.</p>
+      </article>
+      <article class="note-card">
+        <p class="note-tag">Loyalty &middot; Cross-channel</p>
+        <h4 class="note-name">One stamp-card experience across three channels</h4>
+        <p class="note-line"><span>Problem</span>Customers saw stamp rewards differently in the loyalty app, QR ordering and kiosk.</p>
+        <p class="note-line"><span>What I did</span>Rebuilt the customer-facing stamp UI for all three, while keeping the admin setup unchanged so merchants had nothing new to learn.</p>
       </article>
       <article class="note-card">
         <p class="note-tag">Onboarding &middot; UX trade-offs</p>
@@ -1980,12 +1998,6 @@
         <h4 class="note-name">Cleaning up sign-up data across four channels</h4>
         <p class="note-line"><span>Problem</span>Older customer records didn&apos;t show which channel or outlet they signed up from, so reports were misleading.</p>
         <p class="note-line"><span>What I did</span>Analysed the export, set a backfill rule for each case, labelled what can&apos;t be recovered as &ldquo;Not captured&rdquo;, and flagged anomalies for the developers.</p>
-      </article>
-      <article class="note-card">
-        <p class="note-tag">Integration &middot; Platform thinking</p>
-        <h4 class="note-name">Plugging in a robotic kitchen, reusably</h4>
-        <p class="note-line"><span>Problem</span>A robotic-kitchen partner needed an integration, and a one-off build would only ever serve one partner.</p>
-        <p class="note-line"><span>What I did</span>Ran a gap analysis on their spec and reframed it as reusable building blocks: single-item ordering, self-collect QR and an external fulfilment connector.</p>
       </article>
     </div>
   </div>

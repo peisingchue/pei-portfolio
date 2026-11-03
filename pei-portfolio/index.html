@@ -306,6 +306,14 @@
       letter-spacing: .08em; text-transform: uppercase;
       border: 1px solid var(--border); padding: .2rem .5rem; color: var(--muted);
     }
+    .cert-block { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .cert-block .section-label { margin-bottom: 1rem; }
+    .cert-item { display: block; text-decoration: none; padding: .9rem 0; border-bottom: 1px solid var(--border); }
+    .cert-item:last-child { border-bottom: none; }
+    .cert-name { font-size: .95rem; color: var(--text); font-weight: 500; line-height: 1.4; transition: color .2s; }
+    .cert-item:hover .cert-name { color: var(--accent); }
+    .cert-meta { font-family: 'Space Mono', monospace; font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: .35rem; }
+    .cert-meta .cert-new { color: var(--accent); }
 
     @media(max-width:900px){
       .prod-grid { grid-template-columns: 1fr; }
@@ -1172,7 +1180,115 @@
       /* On mobile, video comes first even in reversed layout */
       .case-study--reverse .case-study-video { order: -1; }
     }
-    
+
+    /* ══════════════════════════════════════════
+       NIGHT SHIFT RESTYLE — styling only, no copy changes.
+       Readable sizes, AA contrast, calmer motion, rounder cards.
+       ══════════════════════════════════════════ */
+    :root {
+      --bg: #0f0d0a;
+      --surface: #15120e;
+      --surface2: #1a1612;
+      --border: #2e2820;
+      --muted: #a39a8e;
+      --body: #cfc7bc;
+    }
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none !important; }
+    body::after { opacity: .2; }
+
+    /* Body copy: larger, regular weight, ~11:1 contrast */
+    .hero-desc, .about-text, .tl-desc, .prod-line, .prod-detail p, .prev-desc,
+    .ai-tool-desc, .svc-line, .svc-product-item p, .case-study-desc, .contact-sub,
+    .sample-desc, .challenge-block p {
+      color: var(--body) !important;
+      font-weight: 400;
+    }
+    .about-text, .prev-desc, .case-study-desc, .contact-sub { font-size: 1.05rem; line-height: 1.75; }
+    .tl-desc, .prod-line, .prod-detail p, .svc-line, .svc-product-item p, .ai-tool-desc, .sample-desc { font-size: 1rem; line-height: 1.7; }
+    .challenge-block p { font-size: .98rem !important; line-height: 1.7 !important; }
+    .hero-desc { font-size: 1.2rem; line-height: 1.65; color: var(--body); }
+    .hero-desc strong, .about-text strong { font-weight: 600; }
+
+    /* Labels and meta: drop tiny all-caps mono for readable Outfit */
+    .section-label, .hero-eyebrow, .case-study-label, .challenge-label {
+      font-family: 'Outfit', sans-serif; font-size: .95rem; font-weight: 600;
+      letter-spacing: .02em; text-transform: none;
+    }
+    .tl-date, .prev-period, .cert-meta, .case-study-sub, .company-period, .ab-role-date,
+    .rail-year, .rail-loc, .rail-hint, .prod-year, .photo-caption-tag, .skills-count,
+    .prod-sub, .footer-copy, .footer-top, .more-samples-label, .stat-label {
+      font-family: 'Outfit', sans-serif; font-size: .88rem; font-weight: 500;
+      letter-spacing: .01em; text-transform: none;
+    }
+    .rail-co { font-size: .95rem; }
+    .stat-label { color: var(--muted); }
+    .hero-role { color: var(--muted); }
+
+    /* Chips and badges */
+    .skill-tag, .tl-tag, .tl-badge, .prod-badge, .prod-tags span, .prev-roles span,
+    .svc-products span, .svc-product-badge, .sample-tags span, .case-study-tags span,
+    .nav-badge, .drawer-badge {
+      font-family: 'Outfit', sans-serif; font-size: .82rem; font-weight: 500;
+      letter-spacing: .01em; text-transform: none; border-radius: 4px;
+    }
+    .skill-tag { font-size: .92rem; padding: .55rem 1rem; color: var(--text); border-color: #3a3328; }
+    .tl-tag, .prod-tags span, .prev-roles span, .svc-products span, .sample-tags span, .case-study-tags span {
+      color: var(--body); border-color: #3a3328; padding: .3rem .65rem;
+    }
+    .prod-badge, .svc-product-badge { color: var(--body); border-color: #4a4236; }
+
+    /* Nav */
+    .nav-links a { font-size: .95rem; font-weight: 500; letter-spacing: 0; text-transform: none; opacity: .8; }
+    .nav-logo { font-size: 1.6rem; letter-spacing: .08em; }
+
+    /* Buttons: sentence case, larger, square-ish corners */
+    .btn-primary, .btn-outline {
+      font-size: 1rem; letter-spacing: .01em; text-transform: none;
+      padding: 1rem 1.75rem; border-radius: 4px;
+    }
+    .btn-outline { border-color: #4a4236; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: none; filter: brightness(1.08); }
+
+    /* Cards: separated tiles with soft corners instead of 1px hairline grids */
+    .svc-grid, .prod-grid, .ai-tools-grid, .samples-grid, .prev-grid, .ab-roles { gap: 16px; }
+    .stats-grid { gap: 10px; margin-top: 10px; }
+    .svc-card, .prod-card, .ai-tool-card, .prev-card, .stat, .sample-card {
+      border-radius: 8px; border: 1px solid var(--border);
+    }
+    .svc-card:hover, .prod-card:hover, .ai-tool-card:hover, .prev-card:hover, .sample-card:hover {
+      transform: translateY(-2px); box-shadow: none;
+    }
+    .photo-frame { border-radius: 8px 8px 0 0; }
+    .photo-caption { border-radius: 0 0 8px 8px; }
+    .video-wrapper { border-radius: 8px; }
+    .challenge-block { border-radius: 4px; }
+    .svc-name, .prod-name { line-height: 1.05; }
+
+    /* Contact list */
+    .contact-row { font-size: 1.1rem; }
+    .contact-row span { font-family: 'Outfit', sans-serif; font-size: .88rem; letter-spacing: .01em; text-transform: none; color: var(--muted); }
+
+    /* Calmer motion for people who ask for it */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .hero-eyebrow, .hero-name, .hero-role, .hero-bottom, .scroll-hint { opacity: 1 !important; }
+    }
+
+    /* Mobile: full-width stacked buttons, 44px tap targets */
+    @media (max-width: 900px) {
+      .hamburger { width: 44px; height: 44px; align-items: center; }
+      .hero-desc { font-size: 1.05rem; }
+      .hero-cta { flex-direction: column; width: 100%; gap: .75rem; }
+      .hero-cta a, .hero-cta .btn-primary, .hero-cta .btn-outline {
+        width: 100%; flex: none; justify-content: center; font-size: 1rem; padding: 1rem;
+      }
+      .about-left .btn-primary { width: 100%; justify-content: center; }
+      .drawer-link { font-size: 2rem; }
+      .svc-grid, .prod-grid, .ai-tools-grid, .samples-grid, .prev-grid { gap: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -1635,6 +1751,14 @@
           <span>UTAR</span>
           <span>Biochemistry</span>
           <span>Analytical Thinking</span>
+        </div>
+
+        <div class="cert-block">
+          <p class="section-label">&#10022; Certifications</p>
+          <a class="cert-item" href="https://www.coursera.org/account/accomplishments/specialization/ZOWX5Y8D2B4G" target="_blank" rel="noopener">
+            <div class="cert-name">IBM AI Product Manager Professional Certificate &rarr;</div>
+            <div class="cert-meta">IBM &middot; Coursera &nbsp;&middot;&nbsp; Oct 2026 &nbsp;<span class="cert-new">&#10022; New</span></div>
+          </a>
         </div>
       </div>
 
